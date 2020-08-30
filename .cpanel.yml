@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/andrsipd/public_html/
+    - index.html $DEPLOYPATH
+    - main.js $DEPLOYPATH
+    - -R img $DEPLOYPATH
+    - -R js $DEPLOYPATH
+    - -R css $DEPLOYPATH
