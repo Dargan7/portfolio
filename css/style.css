@@ -50,6 +50,7 @@ Might be used later: #DBD8EB - Light purplish grey
 .header-links a {
   color: #3a3a3a;
   -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   text-decoration: none;
 }
 
@@ -87,6 +88,7 @@ cursor: pointer;
 position: absolute;
 opacity: 1;
 -webkit-transition: 1.2s ease;
+transition: 1.2s ease;
 }
 
 /* Scroll down indicator (bouncing) */
@@ -149,6 +151,7 @@ opacity: 1;
 #swirl1_surface {
   position: fixed;
   z-index: 0;
+  bottom: -28%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -406,6 +409,12 @@ display:block;
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .section .contact h3 a {
     font-size: 42px;
+ }
+ .header-links {
+  visibility: hidden;
+ }
+ #swirl1_surface {
+  bottom: 8%;
  }
 }
 

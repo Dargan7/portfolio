@@ -1,4 +1,19 @@
+
 $(document).ready(function() {
+
+  // setting swirl animation canvas width and height based on screen size
+  const canvas = document.getElementById('swirl1_surface');
+
+  var width = $(window).width();
+  var height = $(window).height();
+
+  if (width < height) { // phone
+    canvas.setAttribute("width", width-(width*.1));
+    canvas.setAttribute("height", width-(width*.1));
+  } else { // monitor
+    canvas.setAttribute("width", height-(height*.2));
+    canvas.setAttribute("height", height-(height*.2));
+  }
 
     // typing animation
     (function($) {
@@ -28,45 +43,11 @@ $(document).ready(function() {
     $('#holder2').writeText("CROLL DOWN.");
   
 
-/*
-    var img1 = document.getElementById('img1');
-    var img2 = document.getElementById('img2');
-    var img3 = document.getElementById('img3');
-    var img4 = document.getElementById('img4');
 
-    var pictures = ["bee.jpg", "tree.jpg", "pasture.jpg", "leaves.jpg"]
-
-    var seconds = 0;
-    var increment = setInterval(seconds += 1, 1000);
-
-    function changeImage() {
-      var picture = Math.floor(Math.random() * 4);
-      var place = Math.floor(Math.random() * 4);
-      img1.style.backgroundImage = "url('img/" + pictures[picture] + "')";
-      switch (place) {
-        case 0:
-          break;
-        case 1:
-          break;
-        case 2:
-          break;
-        case
-      }
-    }
-
-    while (true) {
-      if (increment % 3 == 0) {
-        changeImage();
-      }
-    }
-
-*/
-
-new WOW().init();
+  new WOW().init();
 
   // initiate full page scroll
-
-  if ($(window).width() > 1023) {
+  if ($(window).width()) {
     $('#fullpage').fullpage({
       css3: true,
       navigation: false,
