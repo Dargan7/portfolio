@@ -296,10 +296,6 @@ p {
 
 .card {
   height: 100%;
-  box-shadow:
-    rgba(black, 0.66) 0 30px 60px 0,
-    inset #333 0 0 0 5px,
-    inset rgba(white, 0.5) 0 0 0 6px;
 }
 
 .card a {
@@ -319,6 +315,7 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px #4d4d4d;
 }
 
 .img-description {

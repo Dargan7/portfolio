@@ -39,8 +39,6 @@ $(document).ready(function() {
       setTimeout(1000);
       return $("#holder").writeText("CREATOR.");
     });
-
-    $('#holder2').writeText("CROLL DOWN.");
   
 
 
