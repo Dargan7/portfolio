@@ -416,55 +416,35 @@ display:block;
 }
 
 
-/* DEVELOPER PAGE */
 
-.dev-intro {
-  background: #F7F7F7;
-  width: 100%;
-  height: 100vh;
-}
-.section .dev-intro h1 {
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  font-size: 60px;
-  color: #FF6363;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
 
-@media (min-width: 768px) {
-  .section .dev-intro h1 {
-    font-size: 90px;
- }
-}
-.section .dev-intro h2 {
+
+/*                    DEVELOPMENT STYLES                     */
+
+.section .portfolio h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
   font-family: "Cantarell", sans-serif;
+  color: #009063;
   font-weight: 700;
-  font-size: 22px;
-  color: #9694ff;
-  padding-top: 10px;
-  margin-top: 0;
-  margin-bottom: 13px;
-  border-top: 3px solid #4d547a;
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  .section .dev-intro h2 {
-    font-size: 32px;
- }
+  text-transform: uppercase;
+  font-size: 2.6em;
 }
 
-.section .dev-intro ul {
-  padding: 0;
-  list-style-type: none;
+.gallery-cell img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
 }
-.section .dev-intro ul li {
-  display: inline;
+
+.gallery-cell {
+  width: 100%;
 }
-.section .dev-intro ul li a {
-  color: #dfe2e2;
-  transition: color 0.3s linear;
-}
-.section .dev-intro ul li a:hover, .section .dev-intro ul li a:focus, .section .dev-intro ul li a:active {
-  color: #FF6363;
+
+@media screen and ( min-width: 768px ) {
+  /* half-width cells for larger devices */
+  .gallery-cell { width: 100%; }
 }
