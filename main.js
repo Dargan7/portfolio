@@ -1,20 +1,6 @@
 
 $(document).ready(function() {
 
-  // setting swirl animation canvas width and height based on screen size
-  const canvas = document.getElementById('swirl1_surface');
-
-  var width = $(window).width();
-  var height = $(window).height();
-
-  if (width < height) { // phone
-    canvas.setAttribute("width", width-(width*.1));
-    canvas.setAttribute("height", width-(width*.1));
-  } else { // monitor
-    canvas.setAttribute("width", height-(height*.2));
-    canvas.setAttribute("height", height-(height*.2));
-  }
-
     // typing animation
     (function($) {
       $.fn.writeText = function(content) {
