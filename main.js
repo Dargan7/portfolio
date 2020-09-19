@@ -1,6 +1,14 @@
 
 $(document).ready(function() {
 
+  $('.portfolio-gallery').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    imagesLoaded: true
+  });
+
     // typing animation
     (function($) {
       $.fn.writeText = function(content) {

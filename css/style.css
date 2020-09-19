@@ -147,15 +147,6 @@ transition: 1.2s ease;
   overflow: auto;
 }
 
-/* Cool Swirl animation (THIS WAS WRITTEN BY ANDREW STIBBARD - I did not write this!) */
-#swirl1_surface {
-  position: fixed;
-  z-index: 0;
-  bottom: -28%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 
 .home-intro {
   background: #f7f7f7; 
@@ -281,8 +272,6 @@ p {
 }
 
 .section .portfolio .overlay {
-  margin-top: 40px;
-  margin-bottom: 40px;
   font-family: "Cantarell", sans-serif;
   color: #F7F7F7;
   font-weight: 700;
@@ -290,27 +279,43 @@ p {
   font-size: 2em;
 }
 
-.section .portfolio p {
-  margin-top: 40px;
-}
-
-.card {
-  height: 100%;
-}
-
-.card a {
-  position: absolute;
-  height: 100%;
+.portfolio-cell img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  -webkit-transform: scale(0.35);
+          transform: scale(0.35);
+}
+
+.portfolio-cell {
+  width: 100%;
+}
+
+@media screen and ( min-width: 768px ) {
+  /* half-width cells for larger devices */
+  .portfolio-cell { width: 100%; }
+}
+
+@media screen and ( max-width: 768px ) {
+  .portfolio-cell img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+}
+
+.portfolio-cell a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 10px;
 }
 
-.card img {
-  height: 100%;
-  width: 100%;
+.portfolio-cell img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -319,13 +324,6 @@ p {
 }
 
 .img-description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 5%;
-  right: 0;
-  height: 100%;
-  width: 90%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -333,17 +331,15 @@ p {
   border-radius: 10px;
 }
 
-.card h2 {
+.portfolio-cell h2 {
   position: absolute;
   text-align: center;
   margin: 0;
-  top: 40%;
+  top: 48%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: #F7F7F7;
 }
-
 
 .contact {
   background: #f7f7f7; 
