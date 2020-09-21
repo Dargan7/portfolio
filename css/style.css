@@ -7,7 +7,7 @@ Color (Main text or Accent): #009063
 
 Might be used later: #DBD8EB - Light purplish grey
 
-*/
+*
 
 /* nav header links */
 
@@ -271,14 +271,6 @@ p {
   font-size: 2em;
 }
 
-.section .portfolio .overlay {
-  font-family: "Cantarell", sans-serif;
-  color: #F7F7F7;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2em;
-}
-
 .portfolio-cell img {
   display: flex;
   align-items: center;
@@ -295,6 +287,14 @@ p {
 @media screen and ( min-width: 768px ) {
   /* half-width cells for larger devices */
   .portfolio-cell { width: 100%; }
+
+  .section .portfolio .overlay {
+    font-family: "Cantarell", sans-serif;
+    color: #F7F7F7;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+  }
 }
 
 @media screen and ( max-width: 768px ) {
@@ -305,6 +305,14 @@ p {
     width: 100%;
     -webkit-transform: scale(0.85);
             transform: scale(0.85);
+  }
+
+  .section .portfolio .overlay {
+    font-family: "Cantarell", sans-serif;
+    color: #F7F7F7;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
   }
 }
 
@@ -403,11 +411,8 @@ display:block;
   .section .contact h3 a {
     font-size: 42px;
  }
- .header-links {
-  visibility: hidden;
- }
- #swirl1_surface {
-  bottom: 8%;
+ #home {
+   visibility: hidden;
  }
 }
 
