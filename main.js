@@ -6,7 +6,8 @@ $(document).ready(function() {
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    imagesLoaded: true
+    imagesLoaded: true,
+    resize: true
   });
 
     // typing animation
@@ -90,6 +91,7 @@ $(document).ready(function() {
     });
   
     // smooth scrolling
+    
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -104,6 +106,7 @@ $(document).ready(function() {
         }
       });
     });
+    
   }
     
 });
